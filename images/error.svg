@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.041" height="24" viewBox="0 0 24.041 24">
+  <g id="Interface-Essential_Alerts_alert-triangle" data-name="Interface-Essential / Alerts / alert-triangle" transform="translate(-350.984 -1907)">
+    <g id="Group_184" data-name="Group 184">
+      <g id="alert-triangle">
+        <path id="Shape_827" data-name="Shape 827" d="M363.005,1925.75a.375.375,0,1,0,.375.375.375.375,0,0,0-.375-.375h0" fill="none" stroke="#ef4a5a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Shape_828" data-name="Shape 828" d="M363.005,1922.75v-7.5" fill="none" stroke="#ef4a5a" stroke-linecap="round" stroke-width="1.5"/>
+        <path id="Shape_829" data-name="Shape 829" d="M364.626,1908.76a1.806,1.806,0,0,0-3.242,0l-9.473,19.3a1.521,1.521,0,0,0,1.366,2.192h19.456a1.521,1.521,0,0,0,1.366-2.192Z" fill="none" stroke="#ef4a5a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

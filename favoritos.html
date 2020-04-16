@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delilah Restó - Tus favoritos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">Delilah Restó</div>
+            <nav>
+                <input id="menu" class="menu_trigger" type="checkbox">
+                <label for="menu" class="burger_wrapper">
+                    <span class="burger">
+                        <span class="burger_top"></span>
+                        <span class="burger_center"></span>
+                        <span class="burger_bottom"></span>
+                    </span>
+                </label>
+                <ul>
+                    <li><a href="#favoritos">Mis favoritos</a></li>
+                    <li><a href="#pedidos">Mis pedidos</a></li>
+                    <li><a href="#cuenta">Mi cuenta</a></li>
+                    <li><a href="index.html">Cerrar sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div id="alert" class="alert">
+            <p><span class="icon"></span> <span id="alertContent">Se agregó a favoritos.</span></p>
+        </div>
+
+        <section id="favoritos">
+            <h2>Tus favoritos</h2>
+            <div class="fav_container">
+                <div class="item card" data-item-id="999">
+                    <div class="card_content">
+                        <div class="item_pic" style="background-image: url(images/veggie-avocado.jpg);">
+                            <h3 class="item_name">Veggie avocado</h3>
+                            <div class="delete_fav"><button title="Quitar de favoritos"><label>Quitar de favoritos</label></button></div>
+                        </div>
+                        <div class="item_footer">
+                            <p class="item_price">$150</p>
+                            <button class="item_add">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item card" data-item-id="999">
+                    <div class="card_content">
+                        <div class="item_pic" style="background-image: url(images/focaccia-blanca.jpg);">
+                            <h3 class="item_name">Focaccia blanca</h3>
+                            <div class="delete_fav"><button title="Quitar de favoritos"><label>Quitar de favoritos</label></button></div>
+                        </div>
+                        <div class="item_footer">
+                            <p class="item_price">$150</p>
+                            <button class="item_add">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item card" data-item-id="999">
+                    <div class="card_content">
+                        <div class="item_pic" style="background-image: url(images/hamburguesa-clasica.jpg);">
+                            <h3 class="item_name">Hamburguesa clásica</h3>
+                            <div class="delete_fav"><button title="Quitar de favoritos"><label>Quitar de favoritos</label></button></div>
+                        </div>
+                        <div class="item_footer">
+                            <p class="item_price">$150</p>
+                            <button class="item_add">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item card" data-item-id="999">
+                    <div class="card_content">
+                        <div class="item_pic" style="background-image: url(images/bagel-de-salmon.jpg);">
+                            <h3 class="item_name">Bagel de salmón</h3>
+                            <div class="delete_fav"><button title="Quitar de favoritos"><label>Quitar de favoritos</label></button></div>
+                        </div>
+                        <div class="item_footer">
+                            <p class="item_price">$150</p>
+                            <button class="item_add">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item card" data-item-id="999">
+                    <div class="card_content">
+                        <div class="item_pic" style="background-image: url(images/veggie-avocado.jpg);">
+                            <h3 class="item_name">Veggie avocado</h3>
+                            <div class="delete_fav"><button title="Quitar de favoritos"><label>Quitar de favoritos</label></button></div>
+                        </div>
+                        <div class="item_footer">
+                            <p class="item_price">$150</p>
+                            <button class="item_add">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item card" data-item-id="999">
+                    <div class="card_content">
+                        <div class="item_pic" style="background-image: url(images/focaccia-blanca.jpg);">
+                            <h3 class="item_name">Focaccia blanca</h3>
+                            <div class="delete_fav"><button title="Quitar de favoritos"><label>Quitar de favoritos</label></button></div>
+                        </div>
+                        <div class="item_footer">
+                            <p class="item_price">$150</p>
+                            <button class="item_add">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item card" data-item-id="999">
+                    <div class="card_content">
+                        <div class="item_pic" style="background-image: url(images/hamburguesa-clasica.jpg);">
+                            <h3 class="item_name">Hamburguesa clásica</h3>
+                            <div class="delete_fav"><button title="Quitar de favoritos"><label>Quitar de favoritos</label></button></div>
+                        </div>
+                        <div class="item_footer">
+                            <p class="item_price">$150</p>
+                            <button class="item_add">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item card" data-item-id="999">
+                    <div class="card_content">
+                        <div class="item_pic" style="background-image: url(images/bagel-de-salmon.jpg);">
+                            <h3 class="item_name">Bagel de salmón</h3>
+                            <div class="delete_fav"><button title="Quitar de favoritos"><label>Quitar de favoritos</label></button></div>
+                        </div>
+                        <div class="item_footer">
+                            <p class="item_price">$150</p>
+                            <button class="item_add">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="preCart" class="pre_cart">
+        <div class="wrapper">
+            <button id="cart" class="primary_btn">
+                <span class="icon cart"><span id="itemsQuantity">1</span></span>
+                <label>Ver mi pedido</label>
+                <span id="price">$150</span>
+            </button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;2020 Matías A. Cruz para Acámica</p>
+    </footer>
+</body>
+</html>

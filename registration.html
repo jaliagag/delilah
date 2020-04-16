@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delilah Restó - Crear cuenta</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Delilah Restó</div>
+    </header>
+    <div class="wrapper">
+        <div id="alert" class="alert">
+            <p><span class="icon"></span> <span id="alertContent"></span></p>
+        </div>
+        <form id="registrationForm" action="#">
+            <label for="username">Usuario</label>
+            <input type="text" id="username" name="username">
+
+            <label for="name">Nombre y Apellido</label>
+            <input type="text" name="name" id="name">
+
+            <label for="email">Correo electrónico</label>
+            <input type="text" name="email" id="email" class="error">
+
+            <label for="phone">Teléfono</label>
+            <input type="text" name="phone" id="phone">
+
+            <label for="address">Dirección de envío</label>
+            <input type="text" name="address" id="address">
+
+            <label for="pwd">Contraseña</label>
+            <input type="password" id="pwd" name="pwd">
+            
+            <button id="registrationSubmit" class="primary_btn" type="submit">Crear cuenta</button>
+            <a class="loginlink secondary_btn" href="index.html">Iniciar sesión</a>
+        </form>
+    </div>
+</body>
+</html>
