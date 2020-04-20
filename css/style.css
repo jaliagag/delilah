@@ -9,6 +9,10 @@ body {
     overflow-x: hidden;
 }
 
+h1 {
+    font-size: 24px;
+}
+
 h2 {
     font-size: 16px;
     margin-bottom: 16px;
@@ -20,7 +24,7 @@ header {
     height: 45px;
     background: #3ADDDA;
     color: #FFF;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 header .wrapper {
@@ -56,6 +60,11 @@ header.login {
     margin-right: auto;
     width: 92%;
     max-width: 768px;
+    padding-top: 1px;
+}
+
+form {
+    padding-top: 12px;
 }
 
 label, 
@@ -107,6 +116,11 @@ input:focus {
     -webkit-appearance: none;
 }
 
+.primary_btn label {
+    color: #ffffff;
+    cursor: pointer;
+}
+
 .register,
 .loginlink {
     display: block;
@@ -129,12 +143,15 @@ input:focus {
         background: #FF4600;
     }
 
-.secondary_btn {
+.secondary_btn,
+.secondary_btn label {
     background: #ffffff;
     color: #FC885C;
+    cursor: pointer;
 }
 
-    .secondary_btn:hover {
+    .secondary_btn:hover,
+    .secondary_btn:hover label {
         color: #FF4600;
     }
 
@@ -186,7 +203,12 @@ input.error {
     margin-bottom: 16px;
 }
 
-.item_pic {
+.item.list:last-child {
+    border-bottom: 0px;
+}
+
+.item_pic,
+.item_status {
     display: block;
     width: 48px;
     height: 48px;
@@ -195,6 +217,38 @@ input.error {
     background-repeat: no-repeat;
     float: left;
 }
+
+.item_status {
+    text-align: center;
+    line-height: 48px;
+    color:#FFF;
+    border-radius: 100%;
+    font-size: 24px;
+}
+
+    .item_status.nuevo {
+        background-color: #EF4A5A;
+    }
+
+    .item_status.confirmado {
+        background-color: #FC885C;
+    }
+
+    .item_status.preparando {
+        background-color: #FFC641;
+    }
+
+    .item_status.enviando {
+        background-color: #30D694;
+    }
+
+    .item_status.entregado {
+        background-color: #7D94A3;
+    }
+
+    .item_status.cancelado {
+        background-color: #A9B9F7;
+    }
 
 .item_text {
     float: left;
@@ -207,7 +261,8 @@ input.error {
         margin: 0px;
     }
 
-    .item_price {
+    .item_price,
+    .item_data {
         font-size: 14px;
         color: #777777;
         margin: 0px;
@@ -246,7 +301,9 @@ input.error {
         background-size: contain;
     }
 
-    .item_add {
+    .item_add,
+    .item_remove,
+    .item_more {
         overflow: hidden;
         -webkit-appearance: none;
         border: none;
@@ -270,6 +327,21 @@ input.error {
         .item_add:hover {
             background-color: #FF4600;
         }
+
+    .item_remove,
+    .item_more {
+        background-color: #3ADDDA;
+        background-image: url(../images/remove_icon.svg);
+    }
+
+        .item_more {
+            background-image: url(../images/more.svg);
+        }
+
+        .item_remove:hover,
+        .item_more:hover {
+            background-color: #30D694;
+        }
     
     .card .item_add {
         background: #FFF;
@@ -288,7 +360,9 @@ input.error {
         color: #FF4600;
     }
 
-    .item_add span {
+    .item_add span,
+    .item_remove span,
+    .item_more span {
         display: none;
     }
 
@@ -592,6 +666,139 @@ button #price {
     letter-spacing: 0px;
 }
 
+#payment select {
+    -webkit-appearance: none;
+    border: none;
+    background: #DDD;
+    background: url(../images/select_arrow.svg) no-repeat 198px 12px #DDD;
+    background-size: 12px 6px;
+    border-radius: 5px;
+    padding: 4px 12px !important;
+    display: block;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    width: 220px;
+    margin-bottom: 24px;
+}
+
+#payment label {
+    position: relative;
+    width: 220px;
+}
+
+#shipping p,
+#payment p {
+    margin-top: 0px;
+}
+
+.confirmation {
+    text-align: center;
+}
+
+.confirmation img {
+    width: 90%;
+    max-width: 240px;
+    margin: 24px auto 12px auto;
+}
+
+.confirmation p {
+    margin-bottom: 36px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tracking .actions {
+    padding-top: 24px;
+}
+
+ul#status {
+    padding-left: 0px;
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+#status li {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#status li:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+    border-radius: 100%;
+    margin-right: 12px;
+    z-index: 1;
+}
+
+#status li:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 24px;
+    left: 11px;
+    top: 24px;
+    position: absolute;
+    z-index: 0;
+}
+
+#status li#entregado:after {
+    display: none;
+}
+
+li.inProgress {
+    font-weight: bold;
+    font-style: italic;
+    color: #FC885C;
+}
+
+li.pending {
+    color: #777;
+}
+
+#status li.completed:before {
+    background-color: #FC885C;
+    border: solid 2px #FC885C;
+}
+
+#status li.completed:after {
+    background-color: #FC885C;
+}
+
+#status li.inProgress:before {
+    background-color: #fff;
+    border: solid 2px #FC885C;
+}
+
+#status li.pending:before {
+    background-color: #fff;
+    border: solid 2px #777;
+}
+
+#status li.inProgress:after,
+#status li.pending:after {
+    background-color: #777;
+}
+
+.account h2 {
+    margin-bottom: 0px;
+}
+
+.account p.label {
+    margin-top: 0px;
+}
+
+button#saveChanges {
+    margin-top: 24px;
+}
+
 /* RESPONSIVE FOR SMALL SCREENS */
 @media screen and (max-width: 340px) {
     .item_text {
@@ -634,6 +841,7 @@ button #price {
 
     header {
         height: 80px;
+        margin-bottom: 20px;
     }
 
     nav {
@@ -690,12 +898,17 @@ button #price {
             margin-bottom: 4px;
         }
 
+        #total p {
+            font-size: 21px;
+        }
+
         .card h3.item_name {
             margin-bottom: 0px;
             font-size: 18px;
         }
     
-        .item_price {
+        .item_price,
+        .item_data {
             font-size: 16px;
             margin: 0px;
         }
@@ -757,5 +970,14 @@ button #price {
     
     .fav_container .card_content {
         margin: 0px 0px 28px 1%;
+    }
+
+    .actions {
+        padding-top: 12px;
+    }
+
+    .confirmation img {
+        max-width: 320px;
+        margin: 48px auto 12px auto;
     }
 }
