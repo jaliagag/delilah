@@ -207,8 +207,7 @@ input.error {
     border-bottom: 0px;
 }
 
-.item_pic,
-.item_status {
+.item_pic {
     display: block;
     width: 48px;
     height: 48px;
@@ -216,14 +215,22 @@ input.error {
     background-position: center center;
     background-repeat: no-repeat;
     float: left;
+    margin-right: 8px;
 }
 
 .item_status {
     text-align: center;
-    line-height: 48px;
     color:#FFF;
-    border-radius: 100%;
-    font-size: 24px;
+    border-radius: 200px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    vertical-align: top;
+    padding: 0px 10px;
+    margin-left: 4px;
+    margin-top: 0px;
 }
 
     .item_status.nuevo {
@@ -252,7 +259,6 @@ input.error {
 
 .item_text {
     float: left;
-    margin-left: 8px;
 }
 
     h3.item_name {
@@ -423,6 +429,7 @@ input.error {
     height: 135px;
     position: relative;
     float: none;
+    margin-right: 0px;
 }
 
 .card .item_footer {
@@ -886,11 +893,11 @@ button#saveChanges {
     .item_pic {
         width: 96px;
         height: 96px;
+        margin-right: 16px;
     }
     
     .item_text {
         float: left;
-        margin-left: 16px;
     }
     
         h3.item_name {
@@ -979,5 +986,12 @@ button#saveChanges {
     .confirmation img {
         max-width: 320px;
         margin: 48px auto 12px auto;
+    }
+
+    .item_status {
+        font-size: 14px;
+        padding: 2px 20px;
+        margin-left: 8px;
+        margin-top: -1px;
     }
 }
