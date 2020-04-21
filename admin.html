@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delilah Restó - Admin Panel</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">Delilah Restó</div>
+            <div class="date">Jueves 5 de septiembre</div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="admin.html">Pedidos</a></li>
+                    <li><a href="usuarios.html">Usuarios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li class="solid"><a href="productonuevo.html">Cargar producto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="listingPedidos" class="wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th id="estado">Estado</th>
+                    <th id="hora">Hora</th>
+                    <th id="pedido">Pedido</th>
+                    <th id="detalle">Detalle</th>
+                    <th id="pago">Pago</th>
+                    <th id="usuario">Usuario</th>
+                    <th id="direccion">Dirección de envío</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="">
+                    <td>
+                        <select name="" id="" class="pedidoEstado nuevo">
+                            <option value="nuevo" selected>Nuevo</option>
+                            <option value="confirmado">Confirmado</option>
+                            <option value="preparando">Preparando</option>
+                            <option value="enviando">Enviando</option>
+                            <option value="cancelado">Cancelado</option>
+                            <option value="entregado">Entregado</option>
+                        </select>
+                    </td>
+                    <td>12:30 pm</td>
+                    <td>#72</td>
+                    <td>1x Hamburguesa Clásica, 1x Sádnwich Veggie</td>
+                    <td>
+                        <span class="payment cash"></span>$660
+                    </td>
+                    <td>Freddie Mercury</td>
+                    <td>
+                        <span class="shippingAddress">Fake Street 1234, Ciudad de Mendoza</span>
+                        <div class="item_actions"> 
+                            <button class="item_more"><span>Más información del pedido</span></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="">
+                    <td>
+                        <select name="" id="" class="pedidoEstado confirmado">
+                            <option value="nuevo">Nuevo</option>
+                            <option value="confirmado" selected>Confirmado</option>
+                            <option value="preparando">Preparando</option>
+                            <option value="enviando">Enviando</option>
+                            <option value="cancelado">Cancelado</option>
+                            <option value="entregado">Entregado</option>
+                        </select>
+                    </td>
+                    <td>12:30 pm</td>
+                    <td>#72</td>
+                    <td>1x Hamburguesa Clásica, 1x Sádnwich Veggie</td>
+                    <td>
+                        <span class="payment card"></span>$660
+                    </td>
+                    <td>Freddie Mercury</td>
+                    <td>
+                        <span class="shippingAddress">Fake Street 1234, Ciudad de Mendoza</span>
+                        <div class="item_actions"> 
+                            <button class="item_more"><span>Más información del pedido</span></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="">
+                    <td>
+                        <select name="" id="" class="pedidoEstado preparando">
+                            <option value="nuevo">Nuevo</option>
+                            <option value="confirmado">Confirmado</option>
+                            <option value="preparando" selected>Preparando</option>
+                            <option value="enviando">Enviando</option>
+                            <option value="cancelado">Cancelado</option>
+                            <option value="entregado">Entregado</option>
+                        </select>
+                    </td>
+                    <td>12:30 pm</td>
+                    <td>#72</td>
+                    <td>1x Hamburguesa Clásica, 1x Sádnwich Veggie</td>
+                    <td>
+                        <span class="payment card"></span>$660
+                    </td>
+                    <td>Freddie Mercury</td>
+                    <td>
+                        <span class="shippingAddress">Fake Street 1234, Ciudad de Mendoza</span>
+                        <div class="item_actions"> 
+                            <button class="item_more"><span>Más información del pedido</span></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="">
+                    <td>
+                        <select name="" id="" class="pedidoEstado enviando">
+                            <option value="nuevo">Nuevo</option>
+                            <option value="confirmado">Confirmado</option>
+                            <option value="preparando">Preparando</option>
+                            <option value="enviando" selected>Enviando</option>
+                            <option value="cancelado">Cancelado</option>
+                            <option value="entregado">Entregado</option>
+                        </select>
+                    </td>
+                    <td>12:30 pm</td>
+                    <td>#72</td>
+                    <td>1x Hamburguesa Clásica, 1x Sádnwich Veggie</td>
+                    <td>
+                        <span class="payment card"></span>$660
+                    </td>
+                    <td>Freddie Mercury</td>
+                    <td>
+                        <span class="shippingAddress">Fake Street 1234, Ciudad de Mendoza</span>
+                        <div class="item_actions"> 
+                            <button class="item_more"><span>Más información del pedido</span></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="">
+                    <td>
+                        <select name="" id="" class="pedidoEstado cancelado">
+                            <option value="nuevo">Nuevo</option>
+                            <option value="confirmado">Confirmado</option>
+                            <option value="preparando">Preparando</option>
+                            <option value="enviando">Enviando</option>
+                            <option value="cancelado" selected>Cancelado</option>
+                            <option value="entregado">Entregado</option>
+                        </select>
+                    </td>
+                    <td>12:30 pm</td>
+                    <td>#72</td>
+                    <td>1x Hamburguesa Clásica, 1x Sádnwich Veggie</td>
+                    <td>
+                        <span class="payment card"></span>$660
+                    </td>
+                    <td>Freddie Mercury</td>
+                    <td>
+                        <span class="shippingAddress">Fake Street 1234, Ciudad de Mendoza</span>
+                        <div class="item_actions"> 
+                            <button class="item_more"><span>Más información del pedido</span></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="">
+                    <td>
+                        <select name="" id="" class="pedidoEstado entregado">
+                            <option value="nuevo">Nuevo</option>
+                            <option value="confirmado">Confirmado</option>
+                            <option value="preparando">Preparando</option>
+                            <option value="enviando">Enviando</option>
+                            <option value="cancelado">Cancelado</option>
+                            <option value="entregado" selected>Entregado</option>
+                        </select>
+                    </td>
+                    <td>12:30 pm</td>
+                    <td>#72</td>
+                    <td>1x Hamburguesa Clásica, 1x Sádnwich Veggie</td>
+                    <td>
+                        <span class="payment card"></span>$660
+                    </td>
+                    <td>Freddie Mercury</td>
+                    <td>
+                        <span class="shippingAddress">Fake Street 1234, Ciudad de Mendoza</span>
+                        <div class="item_actions"> 
+                            <button class="item_more"><span>Más información del pedido</span></button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="detallePedido">
+        <header>
+            <div class="wrapper">
+                <h1>Detalle del pedido #<span id="orderNumber">324234234</span></h1>
+                <button id="closeDetalle" class="close"><label>Cerrar</label></button>
+            </div>
+        </header>
+
+        <div class="wrapper">
+            <h2>Detalle</h2>
+
+            <!-- Start listing item -->
+            <div id="99989" class="item list">
+                <div class="item_pic" style="background-image:url(images/bagel-de-salmon.jpg);"></div>
+                <div class="item_text">
+                    <h3 class="item_name">Bagel de salmón</h3>
+                    <p class="item_price">$425</p>
+                </div>
+                <div class="cf"></div>
+            </div>
+            <!-- End listing item-->
+
+            <!-- Start listing item -->
+            <div id="99979" class="item list">
+                <div class="item_pic" style="background-image:url(images/hamburguesa-clasica.jpg);"></div>
+                <div class="item_text">
+                    <h3 class="item_name">Hambuerguesa Clásica</h3>
+                    <p class="item_price">$425</p>
+                </div>
+                <div class="cf"></div>
+            </div>
+            <!-- End listing item-->
+
+            <!-- Start listing item -->
+            <div id="99989" class="item list">
+                <div class="item_pic" style="background-image:url(images/bagel-de-salmon.jpg);"></div>
+                <div class="item_text">
+                    <h3 class="item_name">Bagel de salmón</h3>
+                    <p class="item_price">$425</p>
+                </div>
+                <div class="cf"></div>
+            </div>
+            <!-- End listing item-->
+
+            <!-- Start listing item -->
+            <div id="99979" class="item list">
+                <div class="item_pic" style="background-image:url(images/hamburguesa-clasica.jpg);"></div>
+                <div class="item_text">
+                    <h3 class="item_name">Hambuerguesa Clásica</h3>
+                    <p class="item_price">$425</p>
+                </div>
+                <div class="cf"></div>
+            </div>
+            <!-- End listing item-->
+
+            <div id="total">
+                <p>Total: <strong>$<span id="ammount">660</span></strong></p>
+            </div>
+
+            <h2>Estado</h2>
+            <ul class="satus">
+                <li class="nuevo completed">Nuevo</li>
+                <li class="confirmado completed">Cofirmado</li>
+                <li class="preparando current">Preparando</li>
+                <li class="enviando pending">Enviando</li>
+                <li class="entregado pending">Entregado</li>
+                <li class="cancelado pending">Cancelado</li>
+            </ul>
+
+            <div id="payment">
+                <h2>Forma de pago</h2>
+                <p id="payment_method">
+                    Efectivo
+                </p>
+            </div>
+    
+            <div id="shipping">
+                <h2>Dirección de envío</h2>
+                <p id="user_address">Salta 1544, Departamento 5, Ciudad de Mendoza</p>
+            </div>
+
+            <div id="user">
+                <h2>Usuario</h2>
+                <p><span id="usuario_nombre">Matias Cruz</span> &ndash; <span id="usuario_name">matias.cruz</span></p>
+                <p><span id="user_mail">yo@matiascruz.com.ar</span> &ndash; <span id="user_phone">+54 9 261 6 802034</span></p>
+            </div>
+        </div>
+
+        <div class="paddingBottom"></div>
+
+        <div id="detailActions" class="actions">
+            <div class="wrapper">
+                <button id="call" class="primary_btn">Llamar al teléfono</button>
+                <button id="cancell" class="secondary_btn">Cancelar pedido</button>
+            </div>
+        </div>
+    </section>
+    <div id="overlay" class="overlay"></div>
+
+    <script>
+        var elements = document.querySelectorAll('.item_more');
+        for (i = 0; i < elements.length; ++i) {
+            elements[i].addEventListener('click', function() {
+                // Do something amazing
+                document.getElementById('overlay').classList.add('opened');
+                document.getElementById('detallePedido').classList.add('opened');
+                document.getElementById('detailActions').classList.add('opened');
+            });
+        }
+
+        document.getElementById('closeDetalle').addEventListener('click', function() {
+            // Do something amazing
+            document.getElementById('overlay').classList.remove('opened');
+            document.getElementById('detallePedido').classList.remove('opened');
+            document.getElementById('detailActions').classList.remove('opened');
+        });
+    </script>
+</body>
+</html>

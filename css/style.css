@@ -274,6 +274,28 @@ input.error {
         margin: 0px;
     }
 
+    .item_data.ammount {
+        color: #333333;
+    }
+
+    .item_data.ammount .icon {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        margin-right: 2px;
+        vertical-align: text-bottom;
+    }
+
+    .item_data.ammount .icon.cash {
+        background: url(../images/cash.svg) no-repeat center;
+        background-size: contain;
+    }
+
+    .item_data.ammount .icon.card {
+        background: url(../images/card.svg) no-repeat center;
+        background-size: contain;
+    }
+
 .item_actions {
     float: right;
     width: 80px;
@@ -793,6 +815,8 @@ li.pending {
 #status li.pending:after {
     background-color: #777;
 }
+
+
 
 .account h2 {
     margin-bottom: 0px;
