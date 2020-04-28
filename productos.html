@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delilah Restó - Admin Productos</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">Delilah Restó</div>
+            <div class="date">Jueves 5 de septiembre</div>
+            <nav>
+                <ul>
+                    <li><a href="admin.html">Pedidos</a></li>
+                    <li><a href="usuarios.html">Usuarios</a></li>
+                    <li clas="current"><a href="productos.html">Productos</a></li>
+                    <li class="solid"><a href="#newProd">Cargar producto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div id="alert" class="alert success">
+            <p><span class="icon"></span> <span id="alertContent">El estado del pedido se cambió con éxito.</span></p>
+        </div>
+    </div>
+
+    <section id="listingProductos" class="wrapper">
+        <h1 id="viewTitle">Lista de productos</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th id="id">#ID</th>
+                    <th id="role">Imagen</th>
+                    <th id="lastname">Descripción</th>
+                    <th id="name">Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="">
+                    <td>#0001</td>
+                    <td><div class="img_prod" style="background-image: url(images/hamburguesa-clasica.jpg);"></div></td>
+                    <td>Hambuerguesa Clásica</td>
+                    <td>
+                        <span class="price">$ 425</span>
+                        <div class="item_actions"> 
+                            <button class="item_more"><span>Más información del pedido</span></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="">
+                    <td>#0001</td>
+                    <td><div class="img_prod" style="background-image: url(images/hamburguesa-clasica.jpg);"></div></td>
+                    <td>Hambuerguesa Clásica</td>
+                    <td>
+                        <span class="price">$ 425</span>
+                        <div class="item_actions"> 
+                            <button class="item_more"><span>Más información del pedido</span></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="">
+                    <td>#0001</td>
+                    <td><div class="img_prod" style="background-image: url(images/hamburguesa-clasica.jpg);"></div></td>
+                    <td>Hambuerguesa Clásica</td>
+                    <td>
+                        <span class="price">$ 425</span>
+                        <div class="item_actions"> 
+                            <button class="item_more"><span>Más información del pedido</span></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="">
+                    <td>#0001</td>
+                    <td><div class="img_prod placeholder" style=""></div></td>
+                    <td>Hambuerguesa Clásica</td>
+                    <td>
+                        <span class="price">$ 425</span>
+                        <div class="item_actions"> 
+                            <button class="item_more"><span>Más información del pedido</span></button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <nav class="pagination">
+            <ul>
+                <li class="newer"><a id="newer" class="disabled" href="#newer">&larr; Página anterior</a></li>
+                <li class="older"><a id="older" href="#older">Página siguiente &rarr;</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="detalleProducto">
+        <header>
+            <div class="wrapper">
+                <h1>Info del producto #<span id="prodID">0001</span></h1>
+                <button id="closeDetalle" class="close"><label>Cerrar</label></button>
+            </div>
+        </header>
+
+        <div class="wrapper">
+            <form id="editProd" action="#">
+
+                <label for="prodName">Nombre del producto</label>
+                <input type="text" id="prodName" name="prodName" value="Hamburguesa clásica">
+
+                <label for="price">Precio (sólo números)</label>
+                <input type="text" name="price" id="price" value="425">
+    
+                <label for="email">Imagen actual</label>
+                <input type="text" name="email" id="email" class="" value="matcuz@gmail.com">
+
+                <label for="email">Nueva imagen</label>
+                <input type="text" name="email" id="email" class="" value="matcuz@gmail.com">
+    
+                
+            </form>
+        </div>
+
+        <div class="paddingBottom"></div>
+
+        <div id="detailActions" class="actions">
+            <div class="wrapper">
+                <button id="save" class="primary_btn">Guardar cambios</button>
+                <!-- Sólo se muestra cuando vemos clientes -->
+                <button id="delete" class="secondary_btn">Eliminar producto</button>
+            </div>
+        </div>
+    </section>
+    <div id="overlay" class="overlay"></div>
+
+    <button id="addProduct" class="floating">
+        <label>Agregar producto</label>
+    </button>
+
+    <script>
+        var elements = document.querySelectorAll('.item_more');
+        for (i = 0; i < elements.length; ++i) {
+            elements[i].addEventListener('click', function() {
+                // Do something amazing
+                document.getElementById('overlay').classList.add('opened');
+                document.getElementById('detalleProducto').classList.add('opened');
+                document.getElementById('detailActions').classList.add('opened');
+                document.getElementById('addProduct').classList.add('opened');
+            });
+        }
+
+        document.getElementById('closeDetalle').addEventListener('click', function() {
+            // Do something amazing
+            document.getElementById('overlay').classList.remove('opened');
+            document.getElementById('detalleProducto').classList.remove('opened');
+            document.getElementById('detailActions').classList.remove('opened');
+            document.getElementById('addProduct').classList.remove('opened');
+        });
+
+        document.getElementById('addProduct').addEventListener('click', function() {
+            document.getElementById('overlay').classList.add('opened');
+            document.getElementById('detalleProducto').classList.add('opened');
+            document.getElementById('detailActions').classList.add('opened');
+            document.getElementById('addProduct').classList.add('opened');
+        });
+    </script>
+</body>
+</html>

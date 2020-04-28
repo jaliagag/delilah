@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delilah Restó - Admin Panel</title>
+    <title>Delilah Restó - Admin Pedidos</title>
     <link rel="stylesheet" href="css/admin.css">
 </head>
 <body>
@@ -16,13 +16,20 @@
                     <li class="current"><a href="admin.html">Pedidos</a></li>
                     <li><a href="usuarios.html">Usuarios</a></li>
                     <li><a href="productos.html">Productos</a></li>
-                    <li class="solid"><a href="productonuevo.html">Cargar producto</a></li>
+                    <li class="solid"><a href="#newProd">Cargar producto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <div class="wrapper">
+        <div id="alert" class="alert success">
+            <p><span class="icon"></span> <span id="alertContent">El estado del pedido se cambió con éxito.</span></p>
+        </div>
+    </div>
+
     <section id="listingPedidos" class="wrapper">
+        <h1 id="viewTitle">Lista de pedidos</h1>
         <table>
             <thead>
                 <tr>
@@ -186,14 +193,22 @@
                         </div>
                     </td>
                 </tr>
+                
             </tbody>
         </table>
+
+        <nav class="pagination">
+            <ul>
+                <li class="newer"><a id="newer" class="disabled" href="#newer">&larr; Pedidos más recientes</a></li>
+                <li class="older"><a id="older" href="#older">Pedidos anteriores &rarr;</a></li>
+            </ul>
+        </nav>
     </section>
 
     <section id="detallePedido">
         <header>
             <div class="wrapper">
-                <h1>Detalle del pedido #<span id="orderNumber">324234234</span></h1>
+                <h1>Info del pedido #<span id="orderNumber">324234234</span></h1>
                 <button id="closeDetalle" class="close"><label>Cerrar</label></button>
             </div>
         </header>
